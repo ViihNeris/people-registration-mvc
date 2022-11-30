@@ -1,0 +1,12 @@
+﻿@model PeopleRegistration2.Models.UserModel;
+@{
+    ViewData["Title"] = "Confirmação de Exclusão";
+}
+
+<div class="text-center">
+    <h3>Deseja realmente apagar esse usuário?</h3>
+</div>
+
+
+<a class="btn btn-secondary col-12 mt-2" role="button" asp-controller="User" asp-action="Index">Cancelar</a>
+<a class="btn btn-success col-12 mt-2" role="button" asp-controller="User" asp-action="Delete" asp-route-id="@Model.IdUser">Confirmar</a>

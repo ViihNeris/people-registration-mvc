@@ -1,0 +1,74 @@
+﻿@model IEnumerable<PeopleRegistration2.Models.UserModel>
+
+@{
+    ViewData["Title"] = "Listagem de Usuários";
+}
+
+<div class="text-center">
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a class="btn btn-primary" role="button" asp-controller="User" asp-action="Create">Cadastrar novo usuário</a>
+    </div>
+
+    <!-- Verifica se a chave 'Mensagem' existe no TempData -->
+
+    <br />
+    <h1 class="display-4">Listagem de Usuários</h1>
+    <br />
+
+    @if (@TempData["mensagem"] != null)
+    {
+        <div class="alert alert-success" role="alert">
+            @TempData["mensagem"]
+        </div>
+        <br />
+    }
+    <table class="table table-hover table-dark">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Endereço</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <th scope="row">@item.IdUser</th>
+                    <td>@item.UserName</td>
+                    <td>@item.Address</td>
+                    <td>
+                        <div class="btn-group justify-content-between w-75" role="group">
+                            <a role="button" class="btn btn-outline-primary" asp-controller="User" asp-action="Edit" asp-route-id="@item.IdUser">Editar</a>
+                            <a role="button" class="btn btn-outline-danger" asp-controller="User" asp-action="DeleteConfirm" asp-route-id="@item.IdUser">Excluir</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+            @*   <tr>
+            <th scope="row">26</th>
+            <td>@Model.UserName</td>
+            <td>@Model.Address</td>
+            <td>
+            <div class="btn-group" role="group">
+            <a role="button" class="btn btn-outline-primary" asp-controller="User" asp-action="Edit">Editar</a>
+            <a role="button" class="btn btn-outline-danger" asp-controller="User" asp-action="DeleteConfirm">Excluir</a>
+            </div>
+            </td>
+            </tr>
+            <tr>
+            <th scope="row">27</th>
+            <td>Rosália Floriano</td>
+            <td>Travessa Jaque Écopa, 13</td>
+            <td>
+            <div class="btn-group" role="group">
+            <a role="button" class="btn btn-outline-primary" asp-controller="User" asp-action="Edit">Editar</a>
+            <a role="button" class="btn btn-outline-danger" asp-controller="User" asp-action="DeleteConfirm">Excluir</a>
+            </div>
+            </td>
+            </tr>*@
+        </tbody>
+    </table>
+</div>
