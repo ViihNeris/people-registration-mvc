@@ -3,25 +3,27 @@
     ViewData["Title"] = "Criação de Usuários";
 }
 
-<div class="text-center">
-    <br />
-    <h1 class="display-4">Cadastrar Usuário</h1>
-    <br />
-</div>
+<div class="d-flex flex-column justify-content-center" style="min-height:75vh">
+    <div class="text-center">
+        <br />
+        <h1 class="display-4">Cadastrar Usuário</h1>
+        <br />
+    </div>
 
-<form asp-action="Create" asp-controller="User" method="post">
-    <div class="form-group">
-        <label asp-for="UserName">Nome</label>
-        <input asp-for="UserName" type="text" class="form-control mt-2 p-2" placeholder="Insira o Nome do usuário">
-        <span asp-validation-for="UserName" class="text-danger"></span>
-    </div>
-    <br />
-    <div class="form-group">
-        <label asp-for="Address">Endereço</label>
-        <input asp-for="Address" type="text" class="form-control mt-2 p-2" placeholder="Ex: Rua Best Developer, nº 1000.">
-        <span asp-validation-for="Address"></span>
-    </div>
-    <br />
-    <button type="submit" class="btn btn-primary col-12">Cadastrar</button>
-    <a class="btn btn-secondary mt-3 col-12" asp-controller="User" asp-action="Index" role="button">Voltar</a>
-</form>
+    <form asp-action="Create" asp-controller="User" method="post">
+        <div class="form-group">
+            <label asp-for="UserName">Nome</label>
+            <input asp-for="UserName" type="text" class="form-control mt-2 p-2" placeholder="Insira o Nome do usuário">
+            <span asp-validation-for="UserName" class="text-danger"></span>
+        </div>
+        <br />
+        <div class="form-group">
+            <label asp-for="Address">Endereço</label>
+            <input asp-for="Address" type="text" class="form-control mt-2 p-2" placeholder="Ex: Rua Best Developer, nº 1000.">
+            <span asp-validation-for="Address"></span>
+        </div>
+        <br />
+        <button type="submit" class="btn btn-primary col-12">Cadastrar</button>
+        <a class="btn btn-secondary mt-3 col-12" asp-controller="User" asp-action="Index" role="button">Voltar</a>
+    </form>
+</div>

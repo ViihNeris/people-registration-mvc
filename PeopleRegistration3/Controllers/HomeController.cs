@@ -18,7 +18,7 @@ namespace PeopleRegistration2.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult AboutDev()
         {
             return View();
         }

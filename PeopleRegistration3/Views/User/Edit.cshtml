@@ -3,24 +3,26 @@
     ViewData["Title"] = "Editar Usuários";
 }
 
-<div class="text-center">
-    <br />
-    <h1 class="display-4">Editar Usuário</h1>
-    <br />
-</div>
+<div class="d-flex flex-column justify-content-center" style="min-height:75vh">
+    <div class="text-center">
+        <br />
+        <h1 class="display-4">Editar Usuário</h1>
+        <br />
+    </div>
 
-<form asp-action="Edit" asp-controller="User" method="post">
-    <div class="form-group">
-        <label for="name">Nome</label>
-        <input type="hidden" asp-for="IdUser"/>
-        <input asp-for= "UserName" type="text" class="form-control mt-2 p-2" placeholder="Insira o Nome do usuário">
-    </div>
-    <br />
-    <div class="form-group">
-        <label for="address">Endereço</label>
-        <input asp-for="Address" type="text" class="form-control mt-2 p-2" placeholder="Ex: Rua Best Developer, nº 1000.">
-    </div>
-    <br />
-    <button type="submit" class="btn btn-primary col-12">Atualizar dados</button>
-    <a class="btn btn-secondary mt-3 col-12" asp-controller="User" asp-action="Index" role="button">Voltar</a>
-</form>
+    <form asp-action="Edit" asp-controller="User" method="post">
+        <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="hidden" asp-for="IdUser" />
+            <input asp-for="UserName" type="text" class="form-control mt-2 p-2" placeholder="Insira o Nome do usuário">
+        </div>
+        <br />
+        <div class="form-group">
+            <label for="address">Endereço</label>
+            <input asp-for="Address" type="text" class="form-control mt-2 p-2" placeholder="Ex: Rua Best Developer, nº 1000.">
+        </div>
+        <br />
+        <button type="submit" class="btn btn-primary col-12">Atualizar dados</button>
+        <a class="btn btn-secondary mt-3 col-12" asp-controller="User" asp-action="Index" role="button">Voltar</a>
+    </form>
+</div>

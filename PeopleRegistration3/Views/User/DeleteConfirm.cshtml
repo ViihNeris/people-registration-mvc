@@ -3,10 +3,9 @@
     ViewData["Title"] = "Confirmação de Exclusão";
 }
 
-<div class="text-center">
+<div class="text-center d-flex flex-column align-items-center justify-content-center" style="min-height:75vh">
     <h3>Deseja realmente apagar esse usuário?</h3>
+    <br />
+    <a class="btn btn-secondary col-6 mt-2 font-monospace" role="button" asp-controller="User" asp-action="Index">Cancelar</a>
+    <a class="btn btn-success col-6 mt-4 font-monospace" role="button" asp-controller="User" asp-action="Delete" asp-route-id="@Model.IdUser">Confirmar</a>
 </div>
-
-
-<a class="btn btn-secondary col-12 mt-2" role="button" asp-controller="User" asp-action="Index">Cancelar</a>
-<a class="btn btn-success col-12 mt-2" role="button" asp-controller="User" asp-action="Delete" asp-route-id="@Model.IdUser">Confirmar</a>
