@@ -5,7 +5,7 @@ VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeopleRegistration2", "PeopleRegistration2\PeopleRegistration2.csproj", "{17F6F6B5-328E-4C47-8707-9C7979A99A78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleRegistration3", "PeopleRegistration3\PeopleRegistration3.csproj", "{3CBE872D-ABE1-4555-A2A6-EC1BD7F5F6BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeopleRegistration3", "PeopleRegistration3\PeopleRegistration3.csproj", "{3CBE872D-ABE1-4555-A2A6-EC1BD7F5F6BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
