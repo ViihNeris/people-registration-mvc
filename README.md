@@ -3,7 +3,7 @@ Sistema de cadastro de pessoas, com informações de nome e endereço, conectado
 <br /><br />
 
 ## Solução ✅
-- Ao iniciar a aplicação o usuário é recebido com uma tela de boas vindas:
+- Ao iniciar a aplicação o usuário é recebido com uma tela de boas vindas, como apresentado na imagem a seguir:
 <img width="900" alt="image" src="https://user-images.githubusercontent.com/93789218/205100993-8e9abe4b-ab1c-450b-8ed1-c77ec9aac475.png">
 
 
