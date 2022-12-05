@@ -1,5 +1,5 @@
 # People-Registration 📋
-Sistema de cadastro de pessoas, com informações de nome e endereço, conectado ao banco de dados local e suas operações (CRUD). 🎲
+Sistema de cadastro de pessoas, com informações de nome e endereço, conectado ao banco de dados local e suas operações (CRUD) 🎲
 <br /><br />
 
 ## Solução ✅
